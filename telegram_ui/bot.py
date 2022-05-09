@@ -50,7 +50,7 @@ class TelegramBotUI:
         self._file_cache = {}  # stores sended by user id image for verification
 
     def _start(self, update: Update, context: CallbackContext) -> STATE:
-        hello_msg = f"Добрый день, {update.message.from_user}!"
+        hello_msg = f"Добрый день, {update.message.from_user['first_name']}!"
         descroption_msg = (
             "Этот бот эмулирует прохождение цифрового онбординга с использованием верификации "
             "пользователя по лицу."
