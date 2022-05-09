@@ -9,7 +9,7 @@
 ### With Docker
 
 ```bash
-docker install -t vf_telegram_ui .
+docker install -t fv_telegram_ui .
 ```
 ### With poetry
 ```bash
@@ -23,7 +23,7 @@ pip install .
 ## Start telegram bot 
 ### With Docker
 ```bash
-docker run -e TELEGRAM_BOT_TOKEN=$TELEGRAM_BOT_TOKEN vf_telegram_ui
+docker run -e TELEGRAM_BOT_TOKEN=$TELEGRAM_BOT_TOKEN fv_telegram_ui
 ```
 ### With python
 ```bash
