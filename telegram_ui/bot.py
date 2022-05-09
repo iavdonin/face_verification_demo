@@ -1,7 +1,6 @@
 """ Telegram bot server """
 
 from enum import Enum
-from tkinter import E
 
 from telegram import Update
 from telegram.ext import (
