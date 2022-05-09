@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "telegram_ui"
-version = "0.1.0"
+version = "1.0.0"
 description = ""
 authors = ["Igor Avdonin <igor.avdonin@idrnd.net>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-python-telegram-bot = "^13.11"
+python-telegram-bot = "13.11"
 faceverification = {git = "git@github.com:iavdonin/face_verification.git", rev = "main"}
 
 [tool.poetry.dev-dependencies]
