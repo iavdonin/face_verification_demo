@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "telegram_ui"
+version = "1.0.0"
+description = ""
+authors = ["Igor Avdonin <igor.avdonin@idrnd.net>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-telegram-bot = "13.11"
+faceverification = {git = "git@github.com:iavdonin/face_verification.git", rev = "main"}
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+pylint = "^2.13.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
