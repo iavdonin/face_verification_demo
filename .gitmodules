@@ -1,0 +1,3 @@
+[submodule "face_verification"]
+	path = face_verification
+	url = git@github.com:iavdonin/face_verification.git
