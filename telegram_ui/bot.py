@@ -110,16 +110,19 @@ class TelegramBotUI:
         try:
             is_verified, _ = self.verificator.verify(id_photo, selfie_photo)
         except FaceNotFoundError:
+            is_verified = False
             err_msg = (
                 "Верификация не пройдена, т.к. не найдено лицо на изображении. "
                 "Проверьте изображения или попробуйте переснять фотографию."
             )
         except MultipleFacesError:
+            is_verified = False
             err_msg = (
                 "Верификация не пройдена, т.к. найдено несколько лиц на изображении. "
                 "Проверьте изображения или попробуйте переснять фотографию."
             )
         except PresentationAttackError:
+            is_verified = False
             err_msg = "Верификация не пройдена (обнаружена атака представления)"
 
         if is_verified:
